@@ -17,7 +17,7 @@
 			while($row = mysqli_fetch_array($getPosts)){
 			echo "<h1>{$row['b_title']}</h1>";
 			echo "<span>Posted: {$row['b_date']} by {$row['b_author']}</span><br><br>";
-			echo "<a href=\"includes/post.php?idea={$row['b_id']}\">Read Post...</a><br><br>";
+			echo "<a href=\"#/post?idea={$row['b_id']}\">Read Post...</a><br><br>";
 			}
 			} else {
 			//echo "nope...";
