@@ -1,6 +1,6 @@
 # LSPortfolio #
 
-Liam Stewart's Portfolio Website
+Liam Stewart's Portfolio Website (https://lstew.com). My first angular site utilizing bootstrap's grid. The website fully functions with javascript disabled - with the exception of page transition effects.
 
 # Setup/Install #
 
