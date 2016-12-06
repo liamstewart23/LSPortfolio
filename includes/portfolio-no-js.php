@@ -1,5 +1,5 @@
 <?php
-	require_once("../admin/phpscripts/init.php");
+	require_once("admin/phpscripts/init.php");
 	$tbl="tbl_portfolio";
 	$getPortfolio = getAll($tbl);
 	//echo $getPortfolio;

@@ -1,5 +1,5 @@
 <?php
-	require_once("../admin/phpscripts/init.php");
+	require_once("admin/phpscripts/init.php");
 	$tbl="tbl_contact";
 	$getContact = getAll($tbl);
 	//echo $getContact;

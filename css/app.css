@@ -1,11 +1,12 @@
 .hidden {display: none;}
+
 /*Overall styles*/
 body {
   color: #000;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin-top: 200px;
-  font-size:2em;
+  font-size: 32px;
   overflow-x: hidden;
 }
 a {color: #000;}
@@ -42,29 +43,31 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
   z-index: 2; /*allows hover on iphone to overlay menu*/
 }
 
-/*No JS menu*/
-.js {display: none;}
-#no-js ul {
-    list-style-type: none;
-    margin-top: 20px;
-    padding: 0;
-    overflow: hidden;
+.main-btn{
+  border: 1px solid #000;
+  background:#fff;
+  padding: 15px;
+  border-color:#000;
+  color:#000;
 }
-#no-js ul li {
-    float: left;
+.main-btn:hover{
+  background:#000;
+  text-decoration:none;
+  outline: 0;
+  color:#fff;
 }
-#no-js ul li a {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.main-btn:focus{
+  background:#000;
+  text-decoration:none;
+  outline: 0;
+  color:#fff;
 }
-/*End No JS Menu*/
 
 /*Bootstrap changes*/
-.container {width: 100%;} /*Forces Bootstrap grid full screen width*/
+.container {width: 100%;margin-bottom: 15px;} /*Forces Bootstrap grid full screen width*/
 .ham {margin-top: 25px;}
 .nav li a:hover, .nav li a:focus {background:#fff !important;}
+.navbar-nav li a {outline: 0;}
 .nav-top {margin-top: 40px;} /*Fixes top margin*/
 .navbar-fixed-top {background:#fff;}
 .navbar-toggle .icon-bar {
@@ -83,65 +86,26 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
 }
 #blog-posts span {
   margin-top: -50px;
-  font-size: .7em;
+  font-size: 11.2px;
   font-style: italic;
 }
-#blog-posts a {
+#blog-posts a,#about a {
   opacity: .5;
 }
 #blog-posts h4 {
   font-family: 'Raleway', sans-serif;
-  font-size: 28px;;
+}
+#portfolioItems {
+  margin-top: 80px;
 }
 /*End Pages*/
 
 /*Contact*/
-.contact-style {
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+#contactArea {
+  margin-top: 100px;
 }
-.contact-form{
-  margin-top:15px;
-  border-radius: 0;
-}
-.contact-form .textarea{
-  min-height:220px;
-  resize:none;
-}
-.form-control{
-  box-shadow:none;
-  border-color:#eee;
-  border-radius: 0px;
-  height:50px;
-}
-.form-control:focus{
-  box-shadow:none;
-  border-color:#000;
-}
-.form-control-feedback{
-  line-height:50px;
-}
-.main-btn{
-  border-radius: 0px;
-  background:#fff;
-  border-color:#000;
-  color:#000;
-}
-.main-btn:hover{
-  background:#000;
-  color:#fff;
-}
-.main-btn:focus{
-  background:#000;
-  color:#fff;
-}
-.form-control-feedback {
-line-height: 50px;
-top: 0px;
-}
-#contact-form {
-  margin-top:100px;
-  margin-bottom: 50px;
+.contactItem a {
+  opacity: .7;
 }
 /*End Contact*/
 
@@ -159,6 +123,10 @@ top: 0px;
   display: inline-block;
   overflow: visible;
 }
+#mainMenu a {
+outline: none;
+}
+
 .menu:hover {
     opacity: 0.7;
 }
@@ -196,7 +164,43 @@ top: 0px;
 .menu-span {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: .5em;
+  font-size: 8px;
   line-height: 40px;
 }
 /*End Menu*/
+
+@media only screen and (min-width : 250px) {
+  body {font-size: 12px;}        
+  h1 {font-size: 18px;}
+  h2 {font-size: 26px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 18px;}
+  .contactItem,.contactItem a {font-size: 18px;}
+  #about-start,#blog-posts,#contactArea {margin-top: 50px;}
+}
+@media only screen and (min-width : 500px) {
+  body {font-size: 14px;}        
+  h1 {font-size: 24px;}
+  h2 {font-size: 48px;}
+  h3 {font-size: 36px;}
+  h4 {font-size: 14px;}
+  h5 {font-size: 18px;}
+  .contactItem,.contactItem a {font-size: 24px;}
+  #about-start,#blog-posts,#contactArea {margin-top: 50px;}
+}
+@media only screen and (min-width : 775px) {
+  body {font-size: 18px;}        
+  h1 {font-size: 24px;}
+  h2 {font-size: 50px;}
+  h3 {font-size: 34px;}
+  h4 {font-size: 14px;}
+  .contactItem,.contactItem a {font-size: 32px;}
+}
+@media only screen and (min-width : 950px) {
+  body {font-size: 18px;}        
+  h1 {font-size: 36px;}
+  h2 {font-size: 64px;}
+  h3 {font-size: 48px;}
+  h4 {font-size: 24px;}
+  .contactItem,.contactItem a {font-size: 36px;}
+}
