@@ -6,5 +6,5 @@ Liam Stewart's Portfolio Website
 
 Start Local Server
 Install Database 
-	- If you need to edit from default database name, username or password see amin/phpscripts/config.php
+database name, username or password can be changed in admin/phpscripts/config.php
 Go checkout website!
