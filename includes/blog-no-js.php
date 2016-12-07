@@ -11,7 +11,7 @@
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1"><h3>My thoughts, ideas and complaints.</h3></div>
 	</div>
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1" id="blog-posts">
+		<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2" id="blog-posts">
 			<?php
 			if(!is_string($getPosts)){
 			while($row = mysqli_fetch_array($getPosts)){

@@ -78,7 +78,6 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
 .container .navbar-collapse {background: #fff;}
 /*End Bootstrap changes*/
 /*Pages*/
-#home {opacity: 0;}
 #about-start, #blog-posts {
   margin-top: 100px;
 }

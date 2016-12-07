@@ -20,7 +20,7 @@
 				<?php
 						if(!is_string($getContact)){
 						while($row = mysqli_fetch_array($getContact)){
-						echo "<div class=\"col-sm-12 col-md-4\">";
+						echo "<div class=\"col-sm-12 col-md-5\">";
 							echo "{$row['c_title']} - <a href=\"{$row['c_link']}\" target=\"_blank\">{$row['c_handle']}</a><br><br>";
 						echo "</div>";
 						}
