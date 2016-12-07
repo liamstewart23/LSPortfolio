@@ -15,12 +15,12 @@
 		</div>
 	</div>
 	<div class="row" id="portfolioItems">
-		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 			<?php
 			if(!is_string($getPortfolio)){
 			while($row = mysqli_fetch_array($getPortfolio)){
 			echo "<h1>{$row['p_name']}</h1>";
-			echo "<h5>{$row['p_type']}</h5><br>";
+			echo "<h2>{$row['p_type']}</h2><br>";
 			echo "{$row['p_desc']}<br><br><br>";
 			echo "<a href=\"{$row['p_link']}\" class=\"main-btn\" target=\"_blank\">Launch Project</a><br><br><br><br>";
 			}

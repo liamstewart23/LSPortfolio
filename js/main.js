@@ -47,20 +47,38 @@
 	});		
 	cheet('h o m e', function () {
   		window.location = "#/home";
-	});	
+	});
+	cheet('h', function () {
+  		window.location = "#/home";
+	});		
 	cheet('a b o u t', function () {
   		window.location = "#/about";
 	});
+	cheet('a', function () {
+  		window.location = "#/about";
+	});		
 	cheet('p o r t f o l i o', function () {
   		window.location = "#/portfolio";
 	});
 	cheet('w o r k', function () {
   		window.location = "#/portfolio";
 	});
+	cheet('p', function () {
+  		window.location = "#/portfolio";
+	});
+	cheet('w', function () {
+  		window.location = "#/portfolio";
+	});				
 	cheet('b l o g', function () {
   		window.location = "#/blog";
-	});		
+	});
+	cheet('b', function () {
+  		window.location = "#/blog";
+	});				
 	cheet('c o n t a c t', function () {
   		window.location = "#/contact";
 	});
+	cheet('c', function () {
+  		window.location = "#/contact";
+	});		
 })();
