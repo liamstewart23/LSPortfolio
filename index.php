@@ -9,7 +9,7 @@
         <meta name="author" content="Liam Stewart">
         <meta name="description" content="Hello! I am Liam Stewart, a Website Developer living in London Ontario. I develop websites, design logos, do some killer SEO campaigns!">
         <meta name="HandheldFriendly" content="True" />
-        <link rel="canonical" href="https://www.lstew.com" />
+        <link rel="canonical" href="https://lstew.com" />
         <meta property="og:title" content="Liam Stewart - Web Developer from London Ontario">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="en_US"/>
@@ -36,11 +36,12 @@
         <?php include 'includes/header.php';?>
         <div ng-view class="container-fluid" id="page">
             <noscript>
+            <link rel="stylesheet" href="css/no-js.css">
             <?php
             if (isset($_GET['partial'])) {//If partial is in url
-            $link =  $_GET['partial'];//set variable of of partial
+            $partial =  $_GET['partial'];//set variable of of partial
             // echo $_GET['partial']; // Checking for getting partial in route
-            include 'includes/'.$link.'.php';//include
+            include 'includes/'.$partial.'.php';//include
             }
             else {
             include 'includes/home.php';//otherwise include

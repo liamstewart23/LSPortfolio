@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<div class="row" id="contactArea">
-		<div class="col-sm-12 col-md-8 col-md-offset-2">
+		<div class="col-sm-12 col-md-10 col-md-offset-1">
 			<div class="row contactItem">
 				<?php
 						if(!is_string($getContact)){

@@ -13,18 +13,19 @@
 
 		mysqli_close($link); //want to make sure that it is terminated, do not want anything accessible
 	}
-	function getPost($id, $tbl, $col) {
+	function getSingle($id,$tbl,$col) {
 		require_once("config.php");
-		$querySingle = "SELECT * FROM {$tbl} WHERE {$col}={$id}";
+		$querySingle = "SELECT * FROM {$tbl} WHERE {$col} = {$id}";
 		//echo $querySingle;
 		$runSingle = mysqli_query($link, $querySingle);
-		if($runSingle) {
-			return $runSingle;
-		}
-		else {
-			$error = "This is not the post you are looking for...";
-			return $error;
-		}
+			if ($runSingle) {
+				return $runSingle;
+			} else {
+				$error = "Please pick a blog post!";
+				return $error;
+			}
+
+
 		mysqli_close($link);
 	}
 ?>
