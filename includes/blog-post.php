@@ -11,7 +11,7 @@
 		//echo "Next time pick a blog post!";
 	}
 ?>
-<section id="blog" ng-controller="BlogPostCtrl">
+<section id="blog">
 	<h2 class="hidden">Blog Posts by Liam Stewart</h2>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">

@@ -1,4 +1,4 @@
-<section id="mainMenu" ng-controller="MenuCtrl">
+<section id="mainMenu">
 	<h2 class="hidden">Menu</h2>
 	<div class="row">
 		<div class="col-xs-12 col-sm-offset-0 col-md-9 col-md-offset-3">

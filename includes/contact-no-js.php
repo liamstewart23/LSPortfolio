@@ -4,7 +4,7 @@
 	$getContact = getAll($tbl);
 	//echo $getContact;
 ?>
-<section ng-controller="ContactCtrl">
+<section>
 	<h2 class="hidden">Contact Liam Stewart</h2>
 	<div class="row" id="contact">
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">

@@ -1,19 +1,20 @@
 var app = angular.module('LSPortfolio', ['ngRoute']);//declare app + import ngRoute
 var once = 0;//run menu + logo animation once on homepage
 var siteTitle = "Liam Stewart - Website Developer | London Ontario";//Site Title
-app.config(['$routeProvider', function ($routeProvider) {//Config routes
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {//Config routes
   $routeProvider
-    .when("/", {templateUrl: "includes/home.php"})//Home Page
-    .when("/about", {templateUrl: "includes/about.php"})//About Page
-    .when("/portfolio", {templateUrl: "includes/portfolio.php"})//Portfolio Page
-    .when("/blog", {templateUrl: "includes/blog.php"})//Blog Page
+    .when("/", {templateUrl: "includes/home.php",controller:"HomeCtrl"})//Home Page
+    .when("/about", {templateUrl: "includes/about.php",controller:"AboutCtrl"})//About Page
+    .when("/portfolio", {templateUrl: "includes/portfolio.php",controller:"PortfolioCtrl"})//Portfolio Page
+    .when("/blog", {templateUrl: "includes/blog.php",controller:"BlogCtrl"})//Blog Page
     .when('/blog/:blog_id', {//Blog Post Page
         templateUrl: function(attrs){ 
-            return 'includes/blog-post.php?blog_id=' + attrs.blog_id; }
+            return 'includes/blog-post.php?blog_id=' + attrs.blog_id; },controller:"BlogPostCtrl"
     })
-    .when("/contact", {templateUrl: "includes/contact.php"})//Contact Page
-    .when("/menu", {templateUrl: "includes/menu.php"})//Menu
+    .when("/contact", {templateUrl: "includes/contact.php",controller:"ContactCtrl"})//Contact Page
+    .when("/menu", {templateUrl: "includes/menu.php",controller:"MenuCtrl"})//Menu
     .otherwise({redirectTo: '/'});
+    //$locationProvider.html5Mode(true);
 }]);
 //Controller for Home
 app.controller('HomeCtrl', [function() {
