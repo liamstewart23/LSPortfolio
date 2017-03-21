@@ -1,7 +1,8 @@
 <?php
 	require_once("../admin/phpscripts/init.php");
 	$tbl="tbl_contact";
-	$getContact = getAll($tbl);
+	$col="c_id";
+	$getContact = getAll($tbl,$col);
 	//echo $getContact;
 ?>
 <section>

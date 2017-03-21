@@ -1,7 +1,8 @@
 <?php
-	function getAll($tbl){
+	function getAll($tbl,$id){
 		require_once("config.php");
-		$queryAll = "SELECT * FROM {$tbl}";
+		//order by changes from oldest to newests > newest to oldest
+		$queryAll = "SELECT * FROM {$tbl} ORDER BY {$id} DESC";
 		//echo $queryAll;
 		$runAll = mysqli_query($link, $queryAll);
 		if($runAll) {

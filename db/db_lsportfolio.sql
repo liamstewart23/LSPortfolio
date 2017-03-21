@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2016 at 10:12 PM
+-- Generation Time: Mar 21, 2017 at 07:29 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.5.37
 
@@ -60,12 +60,12 @@ CREATE TABLE `tbl_contact` (
 --
 
 INSERT INTO `tbl_contact` (`c_id`, `c_title`, `c_handle`, `c_link`) VALUES
-(1, 'Email', 'me@lstew.com', 'mailto:me@lstew.com'),
-(2, 'GitHub', '/liamstewart23', 'https://github.com/liamstewart23/'),
-(3, 'Twitter', '@liam__stewart', 'https://twitter.com/liam__stewart'),
-(4, 'Instagram', '@liam__stewart', 'https://www.instagram.com/liam__stewart/'),
-(5, 'Company', 'Ginge Digital', 'https://www.ginge.ca'),
-(6, 'CodePen', '/liamstewart23', 'http://codepen.io/liamstewart23/');
+(1, 'Instagram', '@liam__stewart', 'https://www.instagram.com/liam__stewart/'),
+(2, 'Twitter', '@liam__stewart', 'https://twitter.com/liam__stewart'),
+(3, 'Company', 'Ginge Digital', 'https://www.ginge.ca'),
+(4, 'CodePen', '/liamstewart23', 'http://codepen.io/liamstewart23/'),
+(5, 'GitHub', '/liamstewart23', 'https://github.com/liamstewart23/'),
+(6, 'Email', 'me@lstew.com', 'mailto:me@lstew.com');
 
 -- --------------------------------------------------------
 
@@ -78,18 +78,24 @@ CREATE TABLE `tbl_portfolio` (
   `p_name` varchar(150) NOT NULL,
   `p_type` varchar(200) NOT NULL,
   `p_desc` varchar(2000) NOT NULL,
-  `p_link` varchar(50) NOT NULL
+  `p_link` varchar(200) NOT NULL,
+  `p_source` varchar(200) NOT NULL,
+  `p_complete` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_portfolio`
 --
 
-INSERT INTO `tbl_portfolio` (`p_id`, `p_name`, `p_type`, `p_desc`, `p_link`) VALUES
-(1, 'London Police Association', 'Website Design / Development', 'The London Police Association contacted me for ideas to redesign their existing website. The London Police Association (LPA) required a secure website that allowed them to share information with their members in a secure environment and have access to their users information like phone number, address, or badge number. The best solution to meet their needs was to build a new website with Xenforo Framework.', 'http://www.lpa.on.ca/'),
-(2, 'ONERUN', 'Website Design / Development', 'ONERUN is a not-for-profit organization that raises funds to find a cure for breast cancer and to improve care for those with breast cancer. They also help raise awareness for breast cancer with a variety of events hosted throughout the year. I was on the digital marketing team that helped run the 2015 campaign. I developed a website for ONERUN, allowing them to accept donations on the website and a photo gallery they can upload to.', 'http://www.onerun.ca/'),
-(3, 'Reynolds Bookkeeping', 'Website Development', 'I developed a WordPress theme from a PSD. The website is a completely custom theme based off of the WordPress layers framework.', 'http://reynoldsfinal.nameofyourbusinesshere.com/'),
-(4, 'J Real Jewellers', 'Website Design / Development', 'Supervising as project and development manager for a group of TriOS, Western and Fanshawe co-op students in the development of the J Real Jewellers website. I setup WordPress and restyled an existing theme, allowing the co-op students to add content in via WordPress.', 'http://jrealjewellers.ca/');
+INSERT INTO `tbl_portfolio` (`p_id`, `p_name`, `p_type`, `p_desc`, `p_link`, `p_source`, `p_complete`) VALUES
+(1, 'ONERUN', 'Website Design / Development', 'ONERUN is a not-for-profit organization that raises funds to find a cure for breast cancer and to improve care for those with breast cancer. They also help raise awareness for breast cancer with a variety of events hosted throughout the year. I was on the digital marketing team that helped run the 2015 campaign. I developed a website for ONERUN, allowing them to accept donations on the website and a photo gallery they can upload to.', 'http://www.onerun.ca/', '', ''),
+(2, 'Reynolds Bookkeeping', 'Website Development', 'I developed a WordPress theme from a PSD. The website is a completely custom theme based off of the WordPress layers framework.', 'http://reynoldsfinal.nameofyourbusinesshere.com/', '', ''),
+(4, 'London Police Association', 'Website Design / Development / Branding / Creative Direction', 'The London Police Association contacted me for ideas to redesign their existing website. The London Police Association (LPA) required a secure website that allowed them to share information with their members in a secure environment and have access to their users information like phone number, address, or badge number. The best solution to meet their needs was to build a new website with Xenforo Framework.', 'http://www.lpa.on.ca/', '', ''),
+(5, 'Razer (School Project)', 'Website Design / Development', 'Class project to pick a brand and develop a website for it with a JavaScript based product demo.', 'http://www.gingetech.com/dev/razerProductsDemo/index.html', 'https://github.com/liamstewart23/RazerProductDemo', ''),
+(6, 'REP1 Sports', 'Website Design / Development', 'Front-end website build, integrated with WordPress for SEO and players/team listings pulled in with plugins.', 'http://www.yellowbeardemos.com/', '', ''),
+(8, 'Personal Website', 'Website Design / Development / Branding / Creative Direction', 'An AngularJS frontend, minimalistic design with a purpose of getting visitors straight to my portfolio. Works fully with JS disabled in browser using server side technology.', 'https://lstew.com/', 'https://github.com/liamstewart23/LSPortfolio', ''),
+(9, 'Marine Heritage Society (Chantry Island)', 'Website Design / Development', 'Refreshed the the Chantry Island website for the Marine Heritage Society. An AngularJS front-end app with a custom CMS for photo upload with gallery and content editing.', 'http://www.gingetech.com/dev/chantryisland/', 'https://github.com/liamstewart23/chantryisland', '1'),
+(10, 'Trillium Gift of Life Network (BecauseADonor Campaign)', 'Website Design /  Development / Branding / Creative Direction / Videograghy', 'Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time.  I developed the concept of BecauseADonor - the approach is because of a donor someone gets to live life, gets to experience things they would not otherwise be able to without that donor. The purpose of the campaign is to get people to register as donors, increase awareness and educate people on organ donation.', 'http://www.gingetech.com/dev/odonor/', 'https://github.com/liamstewart23/organdonor', '1');
 
 --
 -- Indexes for dumped tables
@@ -131,7 +137,7 @@ ALTER TABLE `tbl_contact`
 -- AUTO_INCREMENT for table `tbl_portfolio`
 --
 ALTER TABLE `tbl_portfolio`
-  MODIFY `p_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `p_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

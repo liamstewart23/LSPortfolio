@@ -1,7 +1,8 @@
 <?php
 	require_once("admin/phpscripts/init.php");
 	$tbl="tbl_blog";
-	$getPosts = getAll($tbl);
+	$col = "b_id";
+	$getPosts = getAll($tbl,$col);
 	//echo $getPosts;
 ?>
 <section id="blog">

@@ -46,7 +46,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
 .main-btn{
   border: 1px solid #000;
   background:#fff;
-  padding: 15px;
+  padding: 20px;
   border-color:#000;
   color:#000;
 }
@@ -90,15 +90,22 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
   font-size: 11.2px;
   font-style: italic;
 }
-#blog-posts a,#about a {
+#blog a, #about a {
   opacity: .5;
 }
+.pstatus {
+  opacity: .8;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
 #blog-posts h4 {
   font-family: 'Raleway', sans-serif;
 }
 #portfolioItems {
   margin-top: 80px;
 }
+.vsource {margin-left: 25px;}
 /*End Pages*/
 
 /*Contact*/
