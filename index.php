@@ -67,5 +67,6 @@
         <script src="js/vendor/TextPlugin.min.js"></script>
         <script src="js/vendor/cheet.min.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
