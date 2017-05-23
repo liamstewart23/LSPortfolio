@@ -1,9 +1,9 @@
-#Makes URL non www https = https://lstew.com
+#Makes URL non www https = https://liamstewart.ca
 RewriteEngine on
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^lstew\.com [OR]
 RewriteCond %{HTTP_HOST} ^www\.lstew\.com
-RewriteRule ^(.*)$ https://lstew\.com%{REQUEST_URI} [R,L]
+RewriteRule ^(.*)$ https://liamstewart\.ca%{REQUEST_URI} [R,L]
 
 #404 go home for outside angular site
 ErrorDocument 404 / 
