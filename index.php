@@ -28,8 +28,6 @@
         <meta name="googlebot" content="noodp">
         <meta name="fragment" content="!">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Roboto:400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     </head>
@@ -50,7 +48,6 @@
             }?>
             </noscript>
         </div>
-        <div class="hidden"><!-- Here for seo --><h1>liam stewart london ontario</h1><h2>liam stewart</h2><h2>website design london ontario</h2><h2>website development london ontario</h2><h2>web design london ontario</h2><h2>web development london ontario</h2><h3>webhosting london ontario</h3><h3>website designer london ontario</h3><h3>wordpress london ontario</h3><h2>seo london ontario</h2><p><a title="About Liam Stewart" href="https://www.liamstewart.ca/about">Learn More about Liam Stewart</a><br/><a title="About London Ontario" href="https://en.wikipedia.org/wiki/London,_Ontario" target="_blank">Learn More about London Ontario</a></p></div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
