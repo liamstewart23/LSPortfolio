@@ -8,18 +8,27 @@ body {
   font-size: 32px;
   overflow-x: hidden;
 }
-a {color: #000;}
-h2,h3 {font-family: 'Raleway', sans-serif;}
+
+a {
+  color: #000;
+}
+
+h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
 h2 {
   font-weight: 900;
   font-size: 64px;
 }
+
 h3 {
-  font-size: 48px;;
+  font-size: 48px;
 }
-h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   color: #000;
-  text-decoration:none;
+  text-decoration: none;
   opacity: .7;
 }
 
@@ -29,13 +38,13 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
   padding: 20px;
   border-color:#000;
   color:#000;
-  :hover {
+  &:hover {
     background:#000;
     text-decoration:none;
     outline: 0;
     color:#fff;
   }
-  :focus{
+  &:focus{
     background:#000;
     text-decoration:none;
     outline: 0;
@@ -44,16 +53,43 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
 }
 
 /*Bootstrap changes*/
-.container {width: 100%;margin-bottom: 15px;} /*Forces Bootstrap grid full screen width*/
-.ham {margin-top: 25px;}
-.nav li a:hover, .nav li a:focus {background:#fff !important;}
-.navbar-nav li a {outline: 0;}
-.nav-top {margin-top: 40px;} /*Fixes top margin*/
-.navbar-fixed-top {background:#fff;}
+.container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/*Forces Bootstrap grid full screen width*/
+
+.ham {
+  margin-top: 25px;
+}
+
+.nav li a {
+  &:hover, &:focus {
+    background: #fff !important;
+  }
+}
+
+.navbar-nav li a {
+  outline: 0;
+}
+
+.nav-top {
+  margin-top: 40px;
+}
+
+/*Fixes top margin*/
+
+.navbar-fixed-top {
+  background: #fff;
+}
+
 .navbar-toggle .icon-bar {
-  background:#000;
+  background: #000;
   width: 40px;
   height: 5px;
 }
-.container .navbar-collapse {background: #fff;}
-/*End Bootstrap changes*/
+
+.container .navbar-collapse {
+  background: #fff;
+}

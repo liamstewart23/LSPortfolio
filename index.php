@@ -59,7 +59,7 @@
 
   ga('create', 'UA-69408528-6', 'auto');
   ga('send', 'pageview');
-
+  
 </script>
         <script src="js/vendor/angular.min.js"></script>
         <script src="js/vendor/angular-route.min.js"></script>
@@ -67,6 +67,5 @@
         <script src="js/vendor/TextPlugin.min.js"></script>
         <script src="js/vendor/cheet.min.js"></script>
         <script src="js/app.js"></script>
-        <script src="js/main.js"></script>
     </body>
 </html>
