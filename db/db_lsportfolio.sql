@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 15, 2017 at 06:58 PM
+-- Generation Time: Jun 15, 2017 at 07:28 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.0.15
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `liam`
+-- Database: `db_lsportfolio`
 --
 
 -- --------------------------------------------------------

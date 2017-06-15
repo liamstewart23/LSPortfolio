@@ -4,7 +4,7 @@
 	//$password = ""; //PC
 	$password = "root"; //MAC
 	$url = "localhost";
-	$db = "liam"; //MAC
+	$db = "db_lsportfolio"; //MAC
 	//$db = "db_LSPortfolio"; //PC
 	//Everything below does not need to change
 	$link = mysqli_connect($url, $user, $password, $db); //PC VERSION
