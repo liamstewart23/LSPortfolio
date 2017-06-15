@@ -1,4 +1,4 @@
-var app = angular.module('LSPortfolio', ['ngRoute']);//declare app + import ngRoute
+var app = angular.module('LSPortfolio', ['ngRoute','portfolioControllers']);//declare app + import ngRoute
 var once = 0;//run menu + logo animation once on homepage
 var siteTitle = "Liam Stewart - Website Developer | London Ontario";//Site Title
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {//Config routes

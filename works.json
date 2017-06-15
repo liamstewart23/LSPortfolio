@@ -1,0 +1,42 @@
+[
+  {
+    "title":"Title of Work",
+    "shortname":"Title_of_Work",
+    "author":"Firstname Lastname",
+    "year":"2013",
+    "media":"Paper",
+    "description":"A short description of the work."
+  },
+  {
+    "title":"Amber",
+    "shortname":"Amber",
+    "author":"Aiden Smith",
+    "year":"2013",
+    "media":"Fabric",
+    "description":"A short description of the work."
+  },
+  {
+    "title":"Bees, Trapped",
+    "shortname":"Bees_Trapped",
+    "author":"Bethany Tran",
+    "year":"2012",
+    "media":"Mask",
+    "description":"A short description of the work."
+  },
+  {
+    "title":"Trees in the Wind",
+    "shortname":"Trees_in_the_Wind",
+    "author":"Tiffany Heights",
+    "year":"2011",
+    "media":"Paper",
+    "description":"A short description of the work."
+  },
+  {
+    "title":"Yankee Stadium",
+    "shortname":"Yankee_Stadium",
+    "author":"Manual Adams",
+    "year":"2010",
+    "media":"Fabric",
+    "description":"A short description of the work."
+  }
+]
