@@ -60,6 +60,7 @@
 </script>
         <script src="js/vendor/angular.min.js"></script>
         <script src="js/vendor/angular-route.min.js"></script>
+        <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/TweenMax.min.js"></script>
         <script src="js/vendor/TextPlugin.min.js"></script>
         <script src="js/vendor/cheet.min.js"></script>
