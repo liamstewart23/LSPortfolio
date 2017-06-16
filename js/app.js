@@ -1,4 +1,4 @@
-var app = angular.module('LSPortfolio', ['ngRoute','portfolioControllers']);//declare app + import ngRoute
+var app = angular.module('LSPortfolio', ['ngRoute','portfolioControllers']);//declare app + dependencies
 var once = 0;//run menu + logo animation once on homepage
 var siteTitle = "Liam Stewart - Website Developer | London Ontario";//Site Title
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {//Config routes
@@ -6,6 +6,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     .when("/", {templateUrl: "includes/home.php",controller:"HomeCtrl"})//Home Page
     .when("/about", {templateUrl: "includes/about.php",controller:"AboutCtrl"})//About Page
     .when("/portfolio", {templateUrl: "includes/portfolio.php",controller:"PortfolioCtrl"})//Portfolio Page
+    .when("/portfolio-item/:itemId", {templateUrl: "includes/portfolio-item.php",controller:"PortfolioItemCtrl"})//Portfolio Item Page
     .when("/blog", {templateUrl: "includes/blog.php",controller:"BlogCtrl"})//Blog Page
     .when('/blog/:blog_id', {//Blog Post Page
         templateUrl: function(attrs){ 
@@ -41,65 +42,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     //Listeners
     logo.addEventListener("mouseover", expandLogo, false);
 
-    // Easter Eggs and cool additions - Tracks your keystrokes on page (cool library I found - see: cheet.min.js)
-    cheet('1 8 0', function () {
-        TweenMax.to(body, 1, {rotation:180, transformOrigin:"center 100%"});
-    });
-    cheet('s t e v e', function () {
-        alert('A steve fan eh? Me too. Steve is such a great guy! Did you know he loves Hawaiian pizza?');
-    });
-    cheet('g i n g e', function () {
-        window.location = "https://www.ginge.ca/";
-    });
-    cheet('c o n n e c t', function () {
-        window.location = "https://ca.linkedin.com/in/liamstewart23";
-    }); 
-    cheet('c o d e', function () {
-        window.location = "https://github.com/liamstewart23/";
-    });
-    cheet('g i t', function () {
-        window.location = "https://github.com/liamstewart23/";
-    });         
-    cheet('t w i t t e r', function () {
-        window.location = "https://twitter.com/liam__stewart";
-    });     
-    cheet('h o m e', function () {
-        window.location = "#/home";
-    });
-    cheet('h', function () {
-        window.location = "#/home";
-    });     
-    cheet('a b o u t', function () {
-        window.location = "#/about";
-    });
-    // cheet('a', function () {
-    //     window.location = "#/about";
-    // });     
-    cheet('p o r t f o l i o', function () {
-        window.location = "#/portfolio";
-    });
-    cheet('w o r k', function () {
-        window.location = "#/portfolio";
-    });
-    cheet('p', function () {
-        window.location = "#/portfolio";
-    });
-    cheet('w', function () {
-        window.location = "#/portfolio";
-    });             
-    cheet('b l o g', function () {
-        window.location = "#/blog";
-    });
-    cheet('b', function () {
-        window.location = "#/blog";
-    });             
-    cheet('c o n t a c t', function () {
-        window.location = "#/contact";
-    });
-    // cheet('c', function () {
-    //     window.location = "#/contact";
-    // }); 
-
 //Controller for Home
 app.controller('HomeCtrl', [function() {
     angular.element(document).ready(function () {
@@ -131,6 +73,12 @@ app.controller('PortfolioCtrl', [function() {
         var portfolioItems = document.querySelector("#portfolioItems");
         TweenMax.to(portfolio, 0.5, {startAt:{opacity:0, x:-200},opacity: 1, x:0});
         TweenMax.to(portfolioItems, 0.5, {startAt:{opacity:0, x:-400},opacity: 1, x:0});
+    });
+}]);
+//Controller for Portfolio Item
+app.controller('PortfolioItemCtrl', [function() {
+    angular.element(document).ready(function () {
+        document.title = "Portfolio - "+siteTitle;
     });
 }]);
 //Controller for Blog
@@ -168,5 +116,14 @@ app.controller('MenuCtrl', [function() {
     angular.element(document).ready(function () {
     	var menu = document.querySelector("#mainMenu");
         TweenMax.to(menu, 0.5, {startAt:{opacity:0, y:-180},opacity: 1, y:0});
+        // link: function goBack() {
+        //         history.back();
+        // }
+        // menuBack = document.querySelector("#menuLink");
+        // menuBack.addEventListener("click", goBack, false);
     });
 }]);
+
+// function removeMenuBack() {
+//     menuBack.removeEventListener("click", goBack, false);
+// }

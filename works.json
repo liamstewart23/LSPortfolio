@@ -1,42 +1,71 @@
-[
-  {
-    "title":"Title of Work",
-    "shortname":"Title_of_Work",
-    "author":"Firstname Lastname",
-    "year":"2013",
-    "media":"Paper",
-    "description":"A short description of the work."
+[{
+    "title": "BecauseADonor Campaign",
+    "shortname": "Title_of_Work",
+    "type": "Website Design / Development / Branding / Creative Direction / Videograghy",
+    "website": "https://becauseadonor.ca/",
+    "source": "https://github.com/liamstewart23/organdonor",
+    "media": "Paper",
+    "description": "Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time. I developed the concept of BecauseADonor - the approach is because of a donor someone gets to live life, gets to experience things they would not otherwise be able to without that donor. The purpose of the campaign is to get people to register as donors, increase awareness and educate people on organ donation.",
+    "status": "This project is still currently under development."
   },
   {
-    "title":"Amber",
-    "shortname":"Amber",
-    "author":"Aiden Smith",
-    "year":"2013",
-    "media":"Fabric",
-    "description":"A short description of the work."
+    "title": "London Police Association",
+    "shortname": "Title_of_Work",
+    "type": "Website Design / Development / Branding / Creative Direction",
+    "website": "http://www.lpa.on.ca",
+    "source": "",
+    "media": "Paper",
+    "description": "The London Police Association contacted me for ideas to redesign their existing website. The London Police Association (LPA) required a secure website that allowed them to share information with their members in a secure environment and have access to their users information like phone number, address, or badge number. The best solution to meet their needs was to build a new website with Xenforo Framework.",
+    "status": ""
   },
   {
-    "title":"Bees, Trapped",
-    "shortname":"Bees_Trapped",
-    "author":"Bethany Tran",
-    "year":"2012",
-    "media":"Mask",
-    "description":"A short description of the work."
+    "title": "Chantry Island",
+    "shortname": "Title_of_Work",
+    "type": "Website Design / Development / Branding / Creative Direction / Videograghy",
+    "website": "http://www.gingetech.com/dev/chantryisland/",
+    "source": "https://github.com/liamstewart23/chantryisland",
+    "media": "Paper",
+    "description": "Refreshed the the Chantry Island website for the Marine Heritage Society. An AngularJS front-end app with a custom CMS for photo upload with gallery and content editing.",
+    "status": ""
   },
   {
-    "title":"Trees in the Wind",
-    "shortname":"Trees_in_the_Wind",
-    "author":"Tiffany Heights",
-    "year":"2011",
-    "media":"Paper",
-    "description":"A short description of the work."
+    "title": "Reynolds Bookkeeping",
+    "shortname": "Title_of_Work",
+    "type": "Website Development",
+    "website": "http://reynoldsfinal.nameofyourbusinesshere.com",
+    "source": "",
+    "media": "Paper",
+    "description": "I developed a WordPress theme from a PSD. The website is a completely custom theme based off of the WordPress layers framework.",
+    "status": ""
   },
   {
-    "title":"Yankee Stadium",
-    "shortname":"Yankee_Stadium",
-    "author":"Manual Adams",
-    "year":"2010",
-    "media":"Fabric",
-    "description":"A short description of the work."
+    "title": "ONERUN",
+    "shortname": "Title_of_Work",
+    "type": "Website Design / Development",
+    "website": "http://www.onerun.ca/",
+    "source": "",
+    "media": "Paper",
+    "description": "ONERUN is a not-for-profit organization that raises funds to find a cure for breast cancer and to improve care for those with breast cancer. They also help raise awareness for breast cancer with a variety of events hosted throughout the year. I was on the digital marketing team that helped run the 2015 campaign. I developed a website for ONERUN, allowing them to accept donations on the website and a photo gallery they can upload to.",
+    "status": ""
+  },
+  {
+    "title": "Razer (School Project)",
+    "shortname": "Title_of_Work",
+    "type": "Website Design / Development",
+    "website": "http://www.gingetech.com/dev/razerProductsDemo/index.html",
+    "source": "https://github.com/liamstewart23/RazerProductDemo",
+    "media": "Paper",
+    "description": "Class project to pick a brand and develop a website for it with a JavaScript based product demo.",
+    "status": ""
+  },
+  {
+    "title": "REP1 Sports",
+    "shortname": "Title_of_Work",
+    "type": "Website Design / Development",
+    "website": "http://52.26.200.15/",
+    "source": "",
+    "media": "Paper",
+    "description": "Custom WordPress Theme, integrated with SEO and players/team listings plugins.",
+    "status": ""
   }
 ]

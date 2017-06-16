@@ -39,12 +39,12 @@
             <link rel="stylesheet" href="css/no-js.css">
             <?php
             if (isset($_GET['partial'])) {//If partial is in url
-            $partial =  $_GET['partial'];//set variable of of partial
-            // echo $_GET['partial']; // Checking for getting partial in route
-            include 'includes/'.$partial.'.php';//include
+            $partial =  $_GET['partial'];//Set variable of of partial
+            // echo $_GET['partial']; //Checking for getting partial in route
+            include 'includes/'.$partial.'.php';//Include Page Partial
             }
             else {
-            include 'includes/home.php';//otherwise include
+            include 'includes/home.php';//Otherwise
             }?>
             </noscript>
         </div>
@@ -63,8 +63,7 @@
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/TweenMax.min.js"></script>
         <script src="js/vendor/TextPlugin.min.js"></script>
-        <script src="js/vendor/cheet.min.js"></script>
         <script src="js/app.js"></script>
-         <script src="js/controllers.js"></script>
+         <script src="js/portfolio-controllers.js"></script>
     </body>
 </html>
