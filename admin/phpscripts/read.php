@@ -1,7 +1,6 @@
 <?php
 	function getAll($tbl,$id){
 		require_once("config.php");
-		//order by changes from oldest to newests > newest to oldest
 		$queryAll = "SELECT * FROM {$tbl} ORDER BY {$id} DESC";
 		//echo $queryAll;
 		$runAll = mysqli_query($link, $queryAll);
@@ -12,7 +11,7 @@
 			return $error;
 		}
 
-		mysqli_close($link); //want to make sure that it is terminated, do not want anything accessible
+		mysqli_close($link);
 	}
 	function getSingle($id,$tbl,$col) {
 		require_once("config.php");
@@ -25,7 +24,6 @@
 				$error = "Please pick a blog post!";
 				return $error;
 			}
-
 
 		mysqli_close($link);
 	}
