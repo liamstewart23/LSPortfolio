@@ -14,7 +14,7 @@
       </div>
       <div class="row portfolioItemFooterNav">
         <div class="col-xs-4 col-sm-4 col-md-2">
-          <a href="#/portfolio-item/{{prevItem}}"><i class="fa fa-arrow-left"></i> {{works[nextItem].title}}</a>
+          <a href="#/portfolio-item/{{prevItem}}"><i class="fa fa-arrow-left"></i> {{works[prevItem].title}}</a>
         </div>
           <div class="col-xs-4 col-sm-4 col-xs-offset-4 col-sm-offset-4 col-md-2 col-md-offset-8">
           <a href="#/portfolio-item/{{nextItem}}">{{works[nextItem].title}} <i class="fa fa-arrow-right"></i></a>
