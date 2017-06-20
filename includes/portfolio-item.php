@@ -9,14 +9,15 @@
         <p>{{'Author: ' + works[whichWork].author}}</p>
         <p>{{'Year: ' + works[whichWork].year}}</p>
         <p>{{'Media: ' + works[whichWork].media}}</p>
+        <p>{{'Media: ' + works[whichWork].tech}}</p>
         <p>{{works[whichWork].description}}</p>
       </div>
       <div class="row portfolioItemFooterNav">
         <div class="col-xs-4 col-sm-4 col-md-2">
-          <a href="#/portfolio-item/{{prevItem}}"><i class="fa fa-arrow-left"></i> Prev Project</a>
+          <a href="#/portfolio-item/{{prevItem}}"><i class="fa fa-arrow-left"></i> {{works[nextItem].title}}</a>
         </div>
           <div class="col-xs-4 col-sm-4 col-xs-offset-4 col-sm-offset-4 col-md-2 col-md-offset-8">
-          <a href="#/portfolio-item/{{nextItem}}">Next Project <i class="fa fa-arrow-right"></i></a>
+          <a href="#/portfolio-item/{{nextItem}}">{{works[nextItem].title}} <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
