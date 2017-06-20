@@ -45,7 +45,8 @@
             }
             else {
             include 'includes/home.php';//Otherwise
-            }?>
+            }
+            ?>
             </noscript>
         </div>
 <script>

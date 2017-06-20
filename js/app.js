@@ -1,42 +1,41 @@
 var app = angular.module('LSPortfolio', ['ngRoute', 'portfolioControllers']); //declare app + dependencies
-var once = 0; //run menu + logo animation once on homepage
 var siteTitle = "Liam Stewart - Website Developer | London Ontario"; //Site Title
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) { //Config routes
     $routeProvider
-        .when("/", {
+        .when("/", {//Home Page
             templateUrl: "includes/home.php",
             controller: "HomeCtrl"
-        }) //Home Page
-        .when("/about", {
+        })
+        .when("/about", {//About Page
             templateUrl: "includes/about.php",
             controller: "AboutCtrl"
-        }) //About Page
-        .when("/portfolio", {
+        })
+        .when("/portfolio", {//Portfolio Page
             templateUrl: "includes/portfolio.php",
             controller: "PortfolioCtrl"
-        }) //Portfolio Page
-        .when("/portfolio-item/:itemId", {
+        })
+        .when("/portfolio-item/:itemId", {//Portfolio Item Page
             templateUrl: "includes/portfolio-item.php",
             controller: "PortfolioItemCtrl"
-        }) //Portfolio Item Page
-        .when("/blog", {
+        })
+        .when("/blog", {//Blog Page
             templateUrl: "includes/blog.php",
             controller: "BlogCtrl"
-        }) //Blog Page
-        .when('/blog/:blog_id', { //Blog Post Page
+        })
+        .when('/blog/:blog_id', {//Blog Post Page
             templateUrl: function (attrs) {
                 return 'includes/blog-post.php?blog_id=' + attrs.blog_id;
             },
             controller: "BlogPostCtrl"
         })
-        .when("/contact", {
+        .when("/contact", {//Contact Page
             templateUrl: "includes/contact.php",
             controller: "ContactCtrl"
-        }) //Contact Page
-        .when("/menu", {
+        })
+        .when("/menu", {//Menu
             templateUrl: "includes/menu.php",
             controller: "MenuCtrl"
-        }) //Menu
+        })
         .otherwise({
             redirectTo: '/'
         });
@@ -44,6 +43,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 }]);
 
 //Global Variables
+var once = 0; //run menu + logo animation once on homepage
 var logo = document.querySelector("#logo");
 var menu = document.querySelector("#menu");
 var menuLink = document.querySelector("#menuLink");
@@ -125,8 +125,9 @@ app.controller('AboutCtrl', [function () {
 app.controller('PortfolioCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Portfolio - " + siteTitle;
-        var portfolio = document.querySelector("#portfolio");
-        var portfolioItems = document.querySelector("#portfolioItems");
+        var portfolio = document.querySelector(".portfolio-title");
+        var portfolioFilter = document.querySelector(".portfolioFilter");
+        var portfolioSTitle = document.querySelector(".portfolio-stitle");
         TweenMax.to(portfolio, 0.5, {
             startAt: {
                 opacity: 0,
@@ -135,13 +136,20 @@ app.controller('PortfolioCtrl', [function () {
             opacity: 1,
             x: 0
         });
-        TweenMax.to(portfolioItems, 0.5, {
+        TweenMax.to(portfolioSTitle, 1, {
+            startAt: {
+                opacity: 0
+            },
+            delay:1,
+            opacity: 1
+        });
+        TweenMax.to(portfolioFilter, 1, {
             startAt: {
                 opacity: 0,
-                x: -400
+                y: 400
             },
             opacity: 1,
-            x: 0
+            y: 0
         });
         //Portfolio Item Type
         $(".filter-button").click(function () {
@@ -155,7 +163,6 @@ app.controller('PortfolioCtrl', [function () {
 
             }
         });
-
         if ($(".filter-button").removeClass("active")) {
             $(this).removeClass("active");
         }
