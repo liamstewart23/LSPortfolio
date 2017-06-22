@@ -24,6 +24,8 @@ working_files/logo-animation-initial-build-GreenSock/js/.DS_Store
 working_files/logo-animation-initial-build-GreenSock/js/TextPlugin.min.js
 working_files/logo-animation-initial-build-GreenSock/js/TweenMax.min.js
 working_files/logo-animation-initial-build-GreenSock/js/app.js
+admin/phpscripts/config.php
+admin/phpscripts/config.php/
+admin/phpscripts/*
 .sass-cache/
 *.css.map
-admin/phpscripts/config.php

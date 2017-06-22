@@ -16,7 +16,7 @@
     "image": "via.placeholder.com/600x600",
     "project": "https://becauseadonor.ca/",
     "source": "https://github.com/liamstewart23/organdonor",
-    "filter": "web-design branding",
+    "filter": "web-design branding angularjs",
     "description": "Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time. I developed the concept of BecauseADonor - the approach is because of a donor someone gets to live life, gets to experience things they would not otherwise be able to without that donor. The purpose of the campaign is to get people to register as donors, increase awareness and educate people on organ donation.",
     "status": "This project is still currently under development."
   },
@@ -27,7 +27,7 @@
     "image": "via.placeholder.com/600x600",
     "project": "http://www.lpa.on.ca",
     "source": "",
-    "filter": "web-design branding",
+    "filter": "web-design branding xenforo",
     "description": "The London Police Association contacted me for ideas to redesign their existing website. The London Police Association (LPA) required a secure website that allowed them to share information with their members in a secure environment and have access to their users information like phone number, address, or badge number. The best solution to meet their needs was to build a new website with Xenforo Framework.",
     "status": ""
   },
@@ -38,7 +38,7 @@
     "image": "via.placeholder.com/600x600",
     "project": "http://www.gingetech.com/dev/chantryisland/",
     "source": "https://github.com/liamstewart23/chantryisland",
-    "filter": "web-design branding",
+    "filter": "web-design branding angularjs",
     "description": "Refreshed the the Chantry Island website for the Marine Heritage Society. An AngularJS front-end app with a custom CMS for photo upload with gallery and content editing.",
     "status": ""
   },
@@ -60,7 +60,7 @@
     "image": "via.placeholder.com/600x600",
     "project": "http://www.onerun.ca/",
     "source": "",
-    "filter": "web-design branding",
+    "filter": "web-design branding xenforo",
     "description": "ONERUN is a not-for-profit organization that raises funds to find a cure for breast cancer and to improve care for those with breast cancer. They also help raise awareness for breast cancer with a variety of events hosted throughout the year. I was on the digital marketing team that helped run the 2015 campaign. I developed a website for ONERUN, allowing them to accept donations on the website and a photo gallery they can upload to.",
     "status": ""
   },

@@ -18,8 +18,16 @@
 					<button class="portfolio-filter-btn filter-button" data-filter="all">All</button>
 					<button class="portfolio-filter-btn filter-button" data-filter="web-design">Web Design</button>
 					<button class="portfolio-filter-btn filter-button" data-filter="branding">Branding</button>
-					<!--<button class="portfolio-filter-btn filter-button" data-filter="wordpress">WordPress</button>-->
 					<button class="portfolio-filter-btn filter-button" data-filter="seo">SEO</button>
+					<button class="portfolio-filter-btn filter-button" data-filter="wordpress">WordPress</button>
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="drupal">Drupal</button>-->
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="angularjs">AngularJS</button>-->
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="vuejs">Vue.js</button>-->					
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="codeigniter">CodeIgniter</button>-->
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="laravel">Laravel</button>-->
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="python">Python</button>-->
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="nodejs">NodeJS</button>-->
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="xenforo">Xenforo</button>-->
 				</div>
 				<div class="row">
 					<div class="work col-sm-12 col-md-6" ng-repeat="item in works | filter: query | orderBy: workOrder:direction">
