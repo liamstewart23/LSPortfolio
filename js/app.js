@@ -39,6 +39,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .otherwise({
             redirectTo: '/'
         });
+
     //$locationProvider.html5Mode(true);
 }]);
 //Global Variables
@@ -238,9 +239,9 @@ app.controller('ContactCtrl', [function () {
     });
 }]);
 //Controller for Menu
-app.controller('MenuCtrl', [function () {
+app.controller('MenuCtrl', ['$scope', function $scope() {
     angular.element(document).ready(function () {
-        var menu = document.querySelector("#mainMenu");
+        var menu = document.querySelector("#menuPage");
         TweenMax.to(menu, 0.5, {
             startAt: {
                 opacity: 0,
@@ -248,15 +249,6 @@ app.controller('MenuCtrl', [function () {
             },
             opacity: 1,
             y: 0
-        });
-        // link: function goBack() {
-        //         history.back();
-        // }
-        // menuBack = document.querySelector("#menuLink");
-        // menuBack.addEventListener("click", goBack, false);
+        });        
     });
 }]);
-
-// function removeMenuBack() {
-//     menuBack.removeEventListener("click", goBack, false);
-// }
