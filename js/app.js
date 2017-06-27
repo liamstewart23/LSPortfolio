@@ -233,7 +233,7 @@ app.controller('ContactCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Contact - " + siteTitle;
         var contact = document.querySelector("#contact");
-        var contactItem = document.querySelector(".contactItem");
+        var contactItem = document.querySelector(".contact-item");
         TweenMax.to(contact, 0.5, {
             startAt: {
                 opacity: 0,
@@ -245,10 +245,10 @@ app.controller('ContactCtrl', [function () {
         TweenMax.to(contactItem, 0.5, {
             startAt: {
                 opacity: 0,
-                x: -400
+                y: 400
             },
             opacity: 1,
-            x: 0
+            y: 0
         });
     });
 }]);
