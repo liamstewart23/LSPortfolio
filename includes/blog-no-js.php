@@ -6,7 +6,7 @@
 	//echo $getPosts;
 ?>
 <section id="blog">
-	<h2 class="hidden">Blog Posts by Liam Stewart</h2>
+	<h2 class="hide">Blog Posts by Liam Stewart</h2>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1"><h2>Blog</h2></div>
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1"><h3>My thoughts, ideas and complaints.</h3></div>

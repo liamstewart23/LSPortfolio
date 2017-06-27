@@ -1,5 +1,5 @@
 <nav class="navbar navbar-fixed-top">
-	<h2 class="hidden">Website Navigation</h2>
+	<h2 class="hide">Website Navigation</h2>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-8 col-sm-offset-0 col-md-2">
@@ -8,12 +8,8 @@
 			<div class="col-xs-4 col-sm-offset-0 col-md-5 col-md-offset-5">
 				<ul class="nav navbar-nav navbar-right ham">
 					<li>
-						<a href="index.php?partial=menu-no-js" id="menuLink">
-							<button class="menu menuAnimate" type="button" id="menu">
-							<span class="menu-box" >
-								<span class="menu-inner"></span>
-							</span>
-							</button>
+						<a href="index.php?partial=menu-no-js" id="menu" class="menu menuAnimate">
+								<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
 						</a>
 					</li>
 				</ul>
