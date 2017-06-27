@@ -8,7 +8,7 @@
 			<h3>It all starts with an idea.</h3>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row portfolioItems">
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 			<div class="portfolioFilter">
 				<div class="search">

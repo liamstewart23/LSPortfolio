@@ -2,37 +2,37 @@ var app = angular.module('LSPortfolio', ['ngRoute', 'portfolioControllers']); //
 var siteTitle = "Liam Stewart - Website Developer | London Ontario"; //Site Title
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) { //Config routes
     $routeProvider
-        .when("/", {//Home Page
+        .when("/", { //Home Page
             templateUrl: "includes/home.php",
             controller: "HomeCtrl"
         })
-        .when("/about", {//About Page
+        .when("/about", { //About Page
             templateUrl: "includes/about.php",
             controller: "AboutCtrl"
         })
-        .when("/portfolio", {//Portfolio Page
+        .when("/portfolio", { //Portfolio Page
             templateUrl: "includes/portfolio.php",
             controller: "PortfolioCtrl"
         })
-        .when("/portfolio-item/:itemId", {//Portfolio Item Page
+        .when("/portfolio-item/:itemId", { //Portfolio Item Page
             templateUrl: "includes/portfolio-item.php",
             controller: "PortfolioItemCtrl"
         })
-        .when("/blog", {//Blog Page
+        .when("/blog", { //Blog Page
             templateUrl: "includes/blog.php",
             controller: "BlogCtrl"
         })
-        .when('/blog/:blog_id', {//Blog Post Page
+        .when('/blog/:blog_id', { //Blog Post Page
             templateUrl: function (attrs) {
                 return 'includes/blog-post.php?blog_id=' + attrs.blog_id;
             },
             controller: "BlogPostCtrl"
         })
-        .when("/contact", {//Contact Page
+        .when("/contact", { //Contact Page
             templateUrl: "includes/contact.php",
             controller: "ContactCtrl"
         })
-        .when("/menu", {//Menu
+        .when("/menu", { //Menu
             templateUrl: "includes/menu.php",
             controller: "MenuCtrl"
         })
@@ -126,12 +126,12 @@ app.controller('PortfolioCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Portfolio - " + siteTitle;
         var portfolio = document.querySelector(".portfolio-title");
-        var portfolioFilter = document.querySelector(".portfolioFilter");
+        var portfolioFilter = document.querySelector(".portfolioItems");
         var portfolioSTitle = document.querySelector(".portfolio-stitle");
         TweenMax.to(portfolio, 0.5, {
             startAt: {
                 opacity: 0,
-                x: -200
+                x: 200
             },
             opacity: 1,
             x: 0
@@ -140,7 +140,7 @@ app.controller('PortfolioCtrl', [function () {
             startAt: {
                 opacity: 0
             },
-            delay:1,
+            delay: 1,
             opacity: 1
         });
         TweenMax.to(portfolioFilter, 1, {
@@ -156,8 +156,7 @@ app.controller('PortfolioCtrl', [function () {
             var value = $(this).attr('data-filter');
             if (value == "all") {
                 $('.filter').show('1000');
-            }
-            else {
+            } else {
                 $(".filter").not('.' + value).hide('3000');
                 $('.filter').filter('.' + value).show('3000');
 
@@ -172,16 +171,31 @@ app.controller('PortfolioCtrl', [function () {
 //Controller for Portfolio Item
 app.controller('PortfolioItemCtrl', [function () {
     angular.element(document).ready(function () {
-        
+        var portfolioItem = document.querySelector("#portfolioItem");
+        TweenMax.to(portfolioItem, 0.5, {
+            startAt: {
+                opacity: 0
+
+            },
+            opacity: 1
+        });
     });
 }]);
 //Controller for Blog
 app.controller('BlogCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Blog - " + siteTitle;
+        var blog = document.querySelector("#blog");
         var blogHeading = document.querySelector("#blog-heading");
         var blogType = document.querySelector("#blog-type");
         var blogPosts = document.querySelector("#blog-posts");
+        TweenMax.to(blog, 0.5, {
+            startAt: {
+                opacity: 0
+
+            },
+            opacity: 1
+        });
         TweenMax.to(blogHeading, 1, {
             text: "Blog"
         });
@@ -241,14 +255,33 @@ app.controller('ContactCtrl', [function () {
 //Controller for Menu
 app.controller('MenuCtrl', ['$scope', function $scope() {
     angular.element(document).ready(function () {
-        var menu = document.querySelector("#menuPage");
-        TweenMax.to(menu, 0.5, {
+        var menuLeft = document.querySelector(".menuLeft");
+        TweenMax.to(menuLeft, 0.5, {
             startAt: {
                 opacity: 0,
-                y: -180
+                x: -180
             },
             opacity: 1,
-            y: 0
-        });        
+            x: 0
+        });
+        var menuRight = document.querySelector(".menuRight");
+        TweenMax.to(menuRight, 0.5, {
+            startAt: {
+                opacity: 0,
+                x: 180
+            },
+            opacity: 1,
+            x: 0
+        });
+        var menuFooter = document.querySelector(".menuFooter");
+        TweenMax.to(menuFooter, 0.5, {
+            startAt: {
+                opacity: 0,
+                x: -250
+            },
+            opacity: 1,
+            delay: 0.5,
+            x: 0
+        });
     });
 }]);

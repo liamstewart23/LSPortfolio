@@ -1,83 +1,31 @@
 #logo {
-  color: #fff;
-  font-size: 46px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  background-color: #000;   
-  margin-top:25px;
-  margin-left:25px;
-  width: 80px;
-  height: 80px;
-  padding-left: 8px;
-  padding-top: 7px;
-  line-height: 95px;
-  position: relative;
-  outline: none;
-}
-
-.menu {
-  background: transparent;
-  border: 0;
-  margin: 0;
-  padding: 15px 15px;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  text-transform: none;
-  display: inline-block;
-  overflow: visible;
-  &:hover {
-    opacity: 0.7;
-}
-}
-#mainMenu a {
-outline: none;
-}
-.menu-box {
-  width: 40px;
-  height: 24px;
-  position: relative;
-  display: inline-block;
-}
-
-.menu-inner {
-  top: 50%;
-  margin-top: -2px;
-  display: block;
-  background-color: #000;
-  border-radius: 4px;
-  width: 40px;
-  height: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
-  &::before, &::after {
+    color: #fff;
+    font-size: 46px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     background-color: #000;
-    border-radius: 4px;
-    width: 40px;
-    height: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-  }
-  &::before, &::after {
-    content: "";
-    display: block;
-  }
-  &::before {
-    top: -10px;
-  }
-  &::after {
-    bottom: -10px;
-  }
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 80px;
+    height: 80px;
+    padding-left: 8px;
+    padding-top: 6px;
+    line-height: 95px;
+    position: relative;
+    outline: none;
 }
 
-.menu-span {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 40px;
+#menuPage {
+  .menuLeft {opacity: 0;}
+  .menuRight {opacity: 0;}
+    .menuFooter {
+      margin-top: 150px;
+      opacity: 0;
+      a{
+        margin: 15px;
+      }
+    }
+    a {
+        outline: none;
+    }
 }
