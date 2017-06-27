@@ -41,12 +41,11 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         });
     //$locationProvider.html5Mode(true);
 }]);
-
 //Global Variables
 var once = 0; //run menu + logo animation once on homepage
 var logo = document.querySelector("#logo");
 var menu = document.querySelector("#menu");
-var menuLink = document.querySelector("#menuLink");
+var menuLink = document.querySelector(".menu");
 var page = document.querySelector("#page");
 var body = document.querySelector("body");
 
@@ -172,7 +171,7 @@ app.controller('PortfolioCtrl', [function () {
 //Controller for Portfolio Item
 app.controller('PortfolioItemCtrl', [function () {
     angular.element(document).ready(function () {
-        document.title = "Portfolio - " + siteTitle;
+        
     });
 }]);
 //Controller for Blog

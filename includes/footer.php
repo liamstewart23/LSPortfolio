@@ -1,3 +1,3 @@
 <section>
-    <h2 class="hidden">Footer</h2>
+    <h2 class="hide">Website Footer</h2>
 </section>

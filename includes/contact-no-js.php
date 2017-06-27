@@ -6,7 +6,7 @@
 	//echo $getContact;
 ?>
 <section>
-	<h2 class="hidden">Contact Liam Stewart</h2>
+	<h2 class="hide">Contact Liam Stewart</h2>
 	<div class="row" id="contact">
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 			<h2>Contact</h2>

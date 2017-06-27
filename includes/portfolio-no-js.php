@@ -6,7 +6,7 @@
 	//echo $getPortfolio;
 ?>
 <section>
-	<h2 class="hidden">Liam Stewart's Portfolio</h2>
+	<h2 class="hide">Liam Stewart's Portfolio</h2>
 	<div class="row" id="portfolio">
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 			<h2>Portfolio</h2>
@@ -23,9 +23,9 @@
 			echo "<h1>{$row['p_name']}</h1>";
 			echo "<h5>{$row['p_type']}</h5><br>";
 			echo "{$row['p_desc']}<br><br><br>";
-			echo "<a href=\"{$row['p_link']}\" class=\"main-btn\" target=\"_blank\"><i class=\"fa fa-desktop\" aria-hidden=\"true\"></i> View Website</a>";
+			echo "<a href=\"{$row['p_link']}\" class=\"main-btn\" target=\"_blank\" title=\"View Website\"><i class=\"fa fa-desktop\" aria-hidden=\"true\"></i> View Website</a>";
 			if ($row['p_source'] != NULL) {			
-			echo "<a href=\"{$row['p_source']}\" class=\"main-btn vsource\" target=\"_blank\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i> View Source</a>";}
+			echo "<a href=\"{$row['p_source']}\" class=\"main-btn vsource\" target=\"_blank\" title=\"View Project Source Code\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i> View Source</a>";}
 			if ($row['p_complete'] != NULL) {			
 			echo "<span class=\"pstatus\">This project is still currently under development.</span>";
 		}

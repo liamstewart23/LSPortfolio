@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     </head>
     <body ng-app="LSPortfolio">
-        <h1 class="hidden">Liam Stewart - Web Developer from London Ontario</h1>
+        <h1 class="hide">Liam Stewart - Web Developer from London Ontario</h1>
         <?php include 'includes/header.php';?>
         <div ng-view class="container-fluid" id="page">
             <noscript>
