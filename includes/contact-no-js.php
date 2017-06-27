@@ -17,7 +17,7 @@
 	</div>
 	<div class="row" id="contactArea">
 		<div class="col-sm-12 col-md-10 col-md-offset-1">
-			<div class="row contactItem">
+			<div class="row contact-item">
 				<?php
 						if(!is_string($getContact)){
 						while($row = mysqli_fetch_array($getContact)){
