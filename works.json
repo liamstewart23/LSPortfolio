@@ -7,7 +7,8 @@
     "source": "",
     "filter": "web-design wordpress",
     "description": "Develop a WordPress website and theme for a Canadian film.",
-    "status": "This project is still currently under development."
+    "status": "This project is still currently under development.",
+    "viewtype": "Website"
   },
   {
     "title": "BecauseADonor",
@@ -18,7 +19,8 @@
     "source": "https://github.com/liamstewart23/organdonor",
     "filter": "web-design branding angularjs",
     "description": "Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time. I developed the concept of BecauseADonor - the approach is because of a donor someone gets to live life, gets to experience things they would not otherwise be able to without that donor. The purpose of the campaign is to get people to register as donors, increase awareness and educate people on organ donation.",
-    "status": "This project is still currently under development."
+    "status": "This project is still currently under development.",
+    "viewtype": "Website"
   },
   {
     "title": "London Police Association",
@@ -40,7 +42,8 @@
     "source": "https://github.com/liamstewart23/chantryisland",
     "filter": "web-design branding angularjs",
     "description": "Refreshed the the Chantry Island website for the Marine Heritage Society. An AngularJS front-end app with a custom CMS for photo upload with gallery and content editing.",
-    "status": ""
+    "status": "",
+    "viewtype": "Website"
   },
   {
     "title": "Reynolds Bookkeeping",
@@ -51,7 +54,8 @@
     "source": "",
     "filter": "web-design wordpress",
     "description": "I developed a WordPress theme from a PSD. The website is a completely custom theme based off of the WordPress layers framework.",
-    "status": ""
+    "status": "",
+    "viewtype": "Website"
   },
   {
     "title": "ONERUN",
@@ -62,7 +66,8 @@
     "source": "",
     "filter": "web-design branding xenforo",
     "description": "ONERUN is a not-for-profit organization that raises funds to find a cure for breast cancer and to improve care for those with breast cancer. They also help raise awareness for breast cancer with a variety of events hosted throughout the year. I was on the digital marketing team that helped run the 2015 campaign. I developed a website for ONERUN, allowing them to accept donations on the website and a photo gallery they can upload to.",
-    "status": ""
+    "status": "",
+    "viewtype": "Website"
   },
   {
     "title": "Razer (School Project)",
@@ -73,7 +78,8 @@
     "source": "https://github.com/liamstewart23/RazerProductDemo",
     "filter": "web-design branding",
     "description": "Class project to pick a brand and develop a website for it with a JavaScript based product demo.",
-    "status": ""
+    "status": "",
+    "viewtype": "Website"
   },
   {
     "title": "REP1 Sports",
@@ -84,6 +90,7 @@
     "source": "",
     "filter": "web-design wordpress",
     "description": "Custom WordPress Theme, integrated with SEO and players/team listings plugins.",
-    "status": ""
+    "status": "",
+    "viewtype": "Website"
   }
 ]
