@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="IE=edge,IE=9,chrome=1">
+        <meta http-equiv="x-ua-compatible" content="IE=edge, IE=9, chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>Liam Stewart - Website Developer | London Ontario</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -27,14 +27,14 @@
         <meta name="language" content="english">
         <meta name="googlebot" content="noodp">
         <meta name="fragment" content="!">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Roboto:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,900%7CRoboto:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     </head>
-    <body ng-app="LSPortfolio">
+    <body data-ng-app="LSPortfolio">
         <h1 class="hide">Liam Stewart - Web Developer from London Ontario</h1>
         <?php include 'includes/header.php';?>
-        <div ng-view class="container-fluid" id="page">
+        <div data-ng-view class="container-fluid" id="page">
             <noscript>
             <link rel="stylesheet" href="css/no-js.css">
             <?php

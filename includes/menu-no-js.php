@@ -1,4 +1,4 @@
-<section id="mainMenu">
+<section id="menuPage">
 	<h2 class="hide">Menu</h2>
 	<div class="row">
 		<div class="col-xs-12 col-sm-offset-0 col-md-9 col-md-offset-3">
