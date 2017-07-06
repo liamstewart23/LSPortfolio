@@ -21,7 +21,7 @@
 				<?php
 						if(!is_string($getContact)){
 						while($row = mysqli_fetch_array($getContact)){
-						echo "<div class=\"col-sm-12 col-md-4\">";
+						echo "<div class=\"col-xs-6 col-sm-6 col-md-4\">";
 							echo "<i class=\"fa fa-{$row['c_title']}\" aria-hidden=\"true\"></i></i>  <a href=\"{$row['c_link']}\" target=\"_blank\">{$row['c_handle']}</a><br><br>";
 						echo "</div>";
 						}

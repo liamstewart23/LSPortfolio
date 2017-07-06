@@ -10,7 +10,7 @@
 	</div>
 	<div class="row portfolioItems">
 		<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-			<div class="portfolioFilter">
+			<!--<div class="portfolioFilter">
 				<div class="search">
 					<input data-ng-model="query" id="searchField" placeholder="Search..." autofocus>
 				</div>
@@ -20,15 +20,15 @@
 					<button class="portfolio-filter-btn filter-button" data-filter="branding">Branding</button>
 					<button class="portfolio-filter-btn filter-button" data-filter="seo">SEO</button>
 					<button class="portfolio-filter-btn filter-button" data-filter="wordpress">WordPress</button>
-					<!--<button class="portfolio-filter-btn filter-button" data-filter="drupal">Drupal</button>-->
+					<button class="portfolio-filter-btn filter-button" data-filter="drupal">Drupal</button>-->
 					<!--<button class="portfolio-filter-btn filter-button" data-filter="angularjs">AngularJS</button>-->
 					<!--<button class="portfolio-filter-btn filter-button" data-filter="vuejs">Vue.js</button>-->					
 					<!--<button class="portfolio-filter-btn filter-button" data-filter="codeigniter">CodeIgniter</button>-->
 					<!--<button class="portfolio-filter-btn filter-button" data-filter="laravel">Laravel</button>-->
 					<!--<button class="portfolio-filter-btn filter-button" data-filter="python">Python</button>-->
 					<!--<button class="portfolio-filter-btn filter-button" data-filter="nodejs">NodeJS</button>-->
-					<!--<button class="portfolio-filter-btn filter-button" data-filter="xenforo">Xenforo</button>-->
-				</div>
+					<!--<button class="portfolio-filter-btn filter-button" data-filter="xenforo">Xenforo</button>
+				</div>-->
 				<div class="row">
 					<div class="work col-sm-12 col-md-6" data-ng-repeat="item in works | filter: query | orderBy: workOrder:direction">
 						<div class="filter {{ item.filter }}">
