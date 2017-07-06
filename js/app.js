@@ -53,7 +53,7 @@ var body = document.querySelector("body");
 menuLink.href = "#/menu"; //change menu to js enabled version
 logo.href = "#/"; //change logo to js enabled version
 
-//Functions
+//Main Functions
 function expandLogo() { //Expands and animates logo
     TweenMax.to(logo, 1, {
         width: 320,
@@ -71,10 +71,10 @@ function contractLogo() { //Contracts and does closing animation on logo
     logo.addEventListener("mouseover", expandLogo, false);
 }
 
-//Listeners
+//Main Listeners
 logo.addEventListener("mouseover", expandLogo, false);
 
-//Controller for Home
+//Controller for Home Page
 app.controller('HomeCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = siteTitle;
@@ -106,7 +106,7 @@ app.controller('HomeCtrl', [function () {
         });
     });
 }]);
-//Controller for About
+//Controller for About Page
 app.controller('AboutCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "About - " + siteTitle;
@@ -121,7 +121,7 @@ app.controller('AboutCtrl', [function () {
         });
     });
 }]);
-//Controller for Portfolio
+//Controller for Portfolio Page
 app.controller('PortfolioCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Portfolio - " + siteTitle;
@@ -151,7 +151,8 @@ app.controller('PortfolioCtrl', [function () {
             opacity: 1,
             y: 0
         });
-        //Portfolio Item Type
+
+        //Portfolio Item Type Filter
         $(".filter-button").click(function () {
             var value = $(this).attr('data-filter');
             if (value == "all") {
@@ -168,7 +169,7 @@ app.controller('PortfolioCtrl', [function () {
         $(this).addClass("active");
     });
 }]);
-//Controller for Portfolio Item
+//Controller for Portfolio Item Page
 app.controller('PortfolioItemCtrl', [function () {
     angular.element(document).ready(function () {
         var portfolioItem = document.querySelector("#portfolioItem");
@@ -181,7 +182,7 @@ app.controller('PortfolioItemCtrl', [function () {
         });
     });
 }]);
-//Controller for Blog
+//Controller for Blog Page
 app.controller('BlogCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Blog - " + siteTitle;
@@ -213,7 +214,7 @@ app.controller('BlogCtrl', [function () {
         });
     });
 }]);
-//Controller for Blog Post
+//Controller for Blog Post Page
 app.controller('BlogPostCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Blog - " + siteTitle;
@@ -228,7 +229,7 @@ app.controller('BlogPostCtrl', [function () {
         });
     });
 }]);
-//Controller for Contact
+//Controller for Contact Page
 app.controller('ContactCtrl', [function () {
     angular.element(document).ready(function () {
         document.title = "Contact - " + siteTitle;
@@ -252,7 +253,7 @@ app.controller('ContactCtrl', [function () {
         });
     });
 }]);
-//Controller for Menu
+//Controller for Menu Page
 app.controller('MenuCtrl', ['$scope', function $scope() {
     angular.element(document).ready(function () {
         var menuLeft = document.querySelector(".menuLeft");
