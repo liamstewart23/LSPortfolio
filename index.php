@@ -29,7 +29,7 @@
         <meta name="fragment" content="!">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,900%7CRoboto:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        
     </head>
     <body data-ng-app="LSPortfolio">
         <h1 class="hide">Liam Stewart - Web Developer from London Ontario</h1>
