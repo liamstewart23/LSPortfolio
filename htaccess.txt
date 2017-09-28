@@ -3,7 +3,13 @@ RewriteEngine on
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^lstew\.com [OR]
 RewriteCond %{HTTP_HOST} ^www\.lstew\.com
-RewriteRule ^(.*)$ https://liamstewart\.ca%{REQUEST_URI} [R,L]
+RewriteRule ^(.*)$ https://lstew\.com%{REQUEST_URI} [R,L] # <- for test, for prod use [L,R=301]
+
+RewriteCond %{SERVER_PORT} 443
+RewriteCond %{HTTP_HOST} ^www\.lstew\.com
+RewriteRule ^(.*)$ https://lstew\.com%{REQUEST_URI} [R,L] # <- for test, for prod use [L,R=301]
+
+#RewriteRule ^(.*)/$ /$1 [L,R] # <- for test, for prod use [L,R=301] #Remove trailing /
 
 #404 go home for outside angular site
 ErrorDocument 404 / 
