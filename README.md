@@ -1,6 +1,6 @@
 # LSPortfolio #
 
-My Portfolio website - https://lstew.com  
+My Portfolio website - https://liamstewart.ca 
 
 # Tech used #
 HTML  
